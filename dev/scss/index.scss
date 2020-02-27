@@ -1,0 +1,226 @@
+@import "_all-page.scss";
+
+#main {
+    .block1 {
+        background: #535778;
+        .container {
+            padding-top : $a70;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom : $a75;
+            h3 {
+                margin-bottom : $a35;
+            }
+            .button {
+                background: #a5cd48;
+                border-color: #a5cd48;
+                &:hover {
+                    background: none;
+                }
+            }
+        }
+    }
+    .block_slider {
+        .container {
+            padding-bottom : $a98;
+            padding-top : $a83;
+            h4 {
+                margin-bottom : $a35;
+            }
+            .slider {
+
+                .slide {
+                    margin-bottom : $a30;
+                    display: flex;
+                    justify-content : center;
+                    //width : 100%;
+                    .slide1 {
+                        width : $a90;
+                    }
+                    .slide2 {
+                        width : $a178;
+                    }
+                    .slide3 {
+                        width : $a171;
+                    }
+                    .slide4 {
+                        width :$a126;
+                    }
+                    .slide5 {
+                        width : $a136;
+                    }
+                }
+            }
+        }
+    }
+    .block3, .block4 {
+        background: #f5f7fa;
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom : $a100;
+            padding-top : $a100;
+            h3 {
+                color: black;
+                margin-bottom : $a50;
+            }
+            h2 {
+                margin-bottom : $a90;
+            }
+            .content {
+                margin-bottom : $a45;
+                width : 100%;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content : space-between;
+                .card {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content : center;
+                    align-items: center;
+                    width : $a460;
+                    height : $a460;
+                    transition: .5s all;
+                    cursor: pointer;
+                    h4 {
+                        margin-bottom : $a30;
+                    }
+                    p {
+                        font-size : $a15;
+                        line-height : $a23;
+                        font-family: 'MontserratRegular';
+                        text-align: center;
+                    }
+                    img {
+                        margin-bottom : $a55;
+                    }
+                    &:hover {
+                        border-radius: $a7;
+                        background-color: rgb(251, 251, 251);
+                        box-shadow: $a9 $a9 $a32 0 rgba(0, 0, 0, 0.05);
+                    }
+                }
+                .card {
+                    .w1 {
+                        width : $a210;
+                    }
+                }
+                .card {
+                    .w2 {
+                        width : $a145;
+                    }
+                    .m2 {
+                        margin-bottom : $a47;
+                    }
+                }
+                .card {
+                    .w3 {
+                        width : $a242;
+                    }
+                }
+                .card {
+                  .w4 {
+                      width : $a179;
+                      margin-bottom : $a45;
+                  }
+                    .m4 {
+                        margin-bottom : $a18;
+                    }
+                }
+                .card {
+                    .w5 {
+                        width : $a207;
+                    }
+                }
+                .card {
+                    .w6 {
+                        width : $a201;
+                    }
+                }
+            }
+        }
+    }
+    .block4 {
+        background: #eceff6;
+    }
+}
+
+
+@media screen and (max-width: 1023px) {
+    #main {
+        .block1 {
+            .container {
+                padding-bottom : $m50;
+                h3 {
+                    margin-top : $m40;
+                    font-size : $m21;
+                    line-height : $m31;
+                    margin-bottom : $m30;
+                }
+            }
+        }
+        .block_slider {
+            .container {
+                padding-bottom : $m50;
+                display: flex;flex-direction: column;
+                align-items: center;
+                h4 {
+                    font-size : $m15;
+                    line-height : $m25;
+                    width : 80%;
+                    margin-bottom : $m20;
+                }
+                .slider {
+                    width : 100%;
+                    .slide {
+                        //height : $m150;
+                        width : 100%;
+                        margin-bottom : $m30;
+                        img {
+                            width : 50% !important;
+                        }
+                    }
+                }
+            }
+        }
+        .block3, .block4 {
+            .container {
+                padding-top : $m50;
+                h3 {
+                    font-size : $m15;
+                    line-height : $m23;
+                    margin-bottom : $m20;
+                }
+                .content {
+                    width : 100%;
+                    //flex-direction: column;
+                    margin-bottom : $m30;
+                    .card {
+                        width : 100%;
+                        height: auto;
+                        margin-bottom : $m20;
+                        &:hover {
+                            padding : $m15;
+                        }
+                        img {
+                            width : 50% !important;
+                        }
+                        h4 {
+                            font-size : $m15;
+                            line-height : $m23;
+                            margin-bottom : $m20;
+                        }
+                        p {
+                            margin : 0!important;
+                            font-size : $m15;
+                            width : 80%;
+                            line-height : $m23;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
